@@ -9,10 +9,6 @@ import java.util.concurrent.Phaser;
 import java.util.concurrent.RecursiveAction;
 
 public class WebCrawlerMultithreadedAdvance {
-    public static void main(String[] args) {
-
-    }
-
     public List<String> crawl(String startUrl, WebCrawlerMultithreaded.HtmlParser htmlParser) {
         String hostname = htmlParser.getHostName(startUrl);
         Set<String> visited = ConcurrentHashMap.newKeySet();
